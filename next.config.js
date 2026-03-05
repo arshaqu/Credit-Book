@@ -1,10 +1,12 @@
-const withPWA = require('next-pwa')({
+import withPWA from 'next-pwa';
+
+const nextConfig = withPWA({
   dest: 'public',
   register: true,
   skipWaiting: true,
-})
-
-module.exports = withPWA({
+  disable: process.env.NODE_ENV === 'development',
+})({
   reactStrictMode: true,
-  turbopack: {}, // 👈 THIS FIXES THE ERROR
-})
+});
+
+export default nextConfig;
