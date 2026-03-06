@@ -15,6 +15,8 @@ export default function Sidebar() {
     { href: '/Credit', label: 'Credit', icon: '💳' },
     { href: '/Debit', label: 'Debit', icon: '💸' },
     { href: '/history', label: 'History', icon: '📜' },
+    { href: '/plan', label: 'Plan', icon: '🎯' },
+
 
     
 
