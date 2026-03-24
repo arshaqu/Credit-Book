@@ -18,9 +18,6 @@ export default function Sidebar() {
     { href: '/plan', label: 'Plan', icon: '🎯' },
 
 
-    
-
-
   ]
 
   return (
